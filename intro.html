@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayeda Qamar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main content -->
+        <div class="content">
+            <h1>Mayeda Qamar</h1>
+            <p>A gaming student</p>
+            <p>Welcome to my website! Stay to get to know me.</p>
+
+            <div id="home" class="section active">
+                <p>Welcome to my website! Stay to get to know more about me.</p>
+            </div>
+
+            <div id="about" class="section">
+                <p>I am an introvert type person who is interested in art and music. I like literary stuff like novels, art, and history.</p>
+            </div>
+
+            <div id="interests" class="section">
+                <p>My interests include music and art.</p>
+            </div>
+
+            <div id="talents" class="section">
+                <p>I can do mandala art, poetry, and create a 3D endless runner game on Unity.</p>
+            </div>
+
+            <div id="flaws" class="section">
+                <p>I am a procrastinator and often delay stuff and get demotivated.</p>
+            </div>
+
+            <div id="gallery" class="section">
+                <p>Gallery is coming soon!</p>
+            </div>
+
+            <div id="contact" class="section">
+                <p>Email: mayedaqamar249@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('about')">About Me</button>
+            <button onclick="showSection('interests')">Interests</button>
+            <button onclick="showSection('talents')">Talents</button>
+            <button onclick="showSection('flaws')">Flaws</button>
+            <button onclick="showSection('gallery')">Gallery</button>
+            <button onclick="showSection('contact')">Contact Me</button>
+        </div>
+    </div>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => sec.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Page background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E6E6FA; /* light lilac background */
+}
+
+/* Container for sidebar + content */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Content section */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: white; /* white content area */
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #C8A2C8; /* darker lilac */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Sidebar buttons */
+.sidebar button {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #D8BFD8; /* lilac */
+    color: white;
+    transition: background 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #BA55D3; /* darker lilac on hover */
+}
+
+/* Sections */
+.section {
+    display: none;
+}
+
+.active {
+    display: block;
+}
