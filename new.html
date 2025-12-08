@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mayeda Qamar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Vertical Menu -->
+    <div class="sidebar">
+        <button onclick="showSection('home')">HOME</button>
+        <button onclick="showSection('about')">ABOUT ME</button>
+        <button onclick="showSection('flaws')">MY FLAWS</button>
+        <button onclick="showSection('gallery')">GALLERY</button>
+        <button onclick="showSection('contact')">CONTACT ME</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Title page -->
+        <section id="home" class="section visible">
+            <h1>HI! I AM MAYEDA QAMAR</h1>
+            <h2>WELCOME TO MY WEBSITE…</h2>
+            <p class="desc">Stay on this website to know a little about me…</p>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am an introvert procrastinator who likes reading and classical music.</p>
+        </section>
+
+        <!-- My Flaws -->
+        <section id="flaws" class="section">
+            <h2>My Flaws</h2>
+            <p>I often get demotivated and cry a lot.</p>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <p>Soon will be updated 💜</p>
+        </section>
+
+        <!-- Contact Me -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Email: <strong>mayedaqamar@gmail.com</strong></p>
+        </section>
+
+    </div>
+</div>
+
+<script>
+    function showSection(id) {
+        document.querySelectorAll(".section").forEach(sec => sec.classList.remove("visible"));
+        document.getElementById(id).classList.add("visible");
+    }
+</script>
+
+</body>
+</html>
